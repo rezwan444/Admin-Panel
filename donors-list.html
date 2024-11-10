@@ -92,17 +92,22 @@
                         <hr class="opacity-30">
                         <a href="profile.html" class="block py-2 px-4 rounded hover:bg-blue-700">Profile</a>
                         <hr class="opacity-30">
-                        <a href="donors-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donors list (table of donors)</a>
+                        <a href="donors-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donors list (table
+                            of donors)</a>
                         <hr class="opacity-30">
-                        <a href="add-new-donors.html" class="block py-2 px-4 rounded hover:bg-blue-700">Add new donor (Donor add form)</a>
+                        <a href="add-new-donors.html" class="block py-2 px-4 rounded hover:bg-blue-700">Add new donor
+                            (Donor add form)</a>
                         <hr class="opacity-30">
-                        <a href="approvals.html" class="block py-2 px-4 rounded hover:bg-blue-700">Approvals (Table of pending
+                        <a href="approvals.html" class="block py-2 px-4 rounded hover:bg-blue-700">Approvals (Table of
+                            pending
                             donors)</a>
                         <hr class="opacity-30">
-                        <a href="donation-list-date.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donation lists (table of donor
+                        <a href="donation-list-date.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donation
+                            lists (table of donor
                             donate dates)</a>
                         <hr class="opacity-30">
-                        <a href="user-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">User List (table of account
+                        <a href="user-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">User List (table of
+                            account
                             users)</a>
                         <hr class="opacity-30">
                     </nav>
@@ -144,89 +149,544 @@
                             <img src="image/flower.gif" alt="flower_logo" class="w-10 rounded-full">
                         </span>
                     </h1>
-                    <!-- <div class="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between px-4 py-8">
-                        <a href="#">
-                            <div
-                                class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-violet-50">
-                                <div>
-                                    <h1 class="text-lg font-semibold">Total Donors</h1>
-                                    <p class="text-[#1E3A8A] text-3xl font-semibold mt-2">100+</p>
-                                </div>
-                                <div>
-                                    <img src="image/office-man.png" alt="user_icon" class="w-14 h-12">
-                                </div>
-                            </div>
-                        </a>
 
-                        <a href="#">
-                            <div
-                                class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-blue-50">
-                                <div>
-                                    <h1 class="text-lg font-semibold">Total Users List</h1>
-                                    <p class="text-[#1E3A8A] text-3xl font-semibold mt-2">100+</p>
-                                </div>
-                                <div>
-                                    <img src="image/office-man.png" alt="user_icon" class="w-14 h-12">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#">
-                            <div
-                                class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-yellow-50">
-                                <div>
-                                    <h1 class="text-lg font-semibold">Add New Donors</h1>
-                                    <p class="text-[#1E3A8A] text-3xl font-semibold mt-2">100+</p>
-                                </div>
-                                <div>
-                                    <img src="image/office-man.png" alt="user_icon" class="w-14 h-12">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#">
-                            <div
-                                class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-orange-50">
-                                <div>
-                                    <h1 class="text-lg font-semibold">Approval</h1>
-                                    <p class="text-[#1E3A8A] text-3xl font-semibold mt-2">100+</p>
-                                </div>
-                                <div>
-                                    <img src="image/office-man.png" alt="user_icon" class="w-14 h-12">
-                                </div>
-                            </div>
-                        </a>
-                    </div> -->
                     <!-- main section start -->
                     <main class="px-4 mt-6">
                         <div class="bg-white p-4 md:p-6 rounded-lg shadow-md">
                             <h2 class="text-xl md:text-2xl font-bold mb-4">Total Donors List</h2>
-                            <div class="overflow-x-auto">
-                                <table class="min-w-full border-collapse">
-                                    <thead>
+                            <div class="overflow-x-auto overflow-auto h-96">
+                                <table class="min-w-full h-48 border-collapse">
+                                    <thead class="bg-white bg-opacity-75 backdrop-blur-md px-4 py-2 border-b border-gray-200 text-left sticky top-0">
                                         <tr>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Name</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Blood Group</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Location</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Phone</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Last Donation</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Id</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Name
+                                            </th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Blood
+                                                Group</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">
+                                                Location</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Gender
+                                            </th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Phone
+                                            </th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Join
+                                                Date</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Action
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="border-b">
-                                            <td class="p-3 text-sm md:text-base">John Doe</td>
-                                            <td class="p-3 text-sm md:text-base">A+</td>
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
                                             <td class="p-3 text-sm md:text-base">New York</td>
-                                            <td class="p-3 text-sm md:text-base">01234567890</td>
-                                            <td class="p-3 text-sm md:text-base">01-08-2024</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
                                         </tr>
                                         <tr class="border-b">
-                                            <td class="p-3 text-sm md:text-base">Jane Smith</td>
-                                            <td class="p-3 text-sm md:text-base">B-</td>
-                                            <td class="p-3 text-sm md:text-base">California</td>
-                                            <td class="p-3 text-sm md:text-base">01789456120</td>
-                                            <td class="p-3 text-sm md:text-base">01-09-2024</td>
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
                                         </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b">
+                                            <td class="p-3 text-sm md:text-base">1</td>
+                                            <td class="p-3 text-sm md:text-base">Adam Smith</td>
+                                            <td class="p-3 text-sm md:text-base">AB+</td>
+                                            <td class="p-3 text-sm md:text-base">New York</td>
+                                            <td class="p-3 text-sm md:text-base">Male</td>
+                                            <td class="p-3 text-sm md:text-base">0123456789</td>
+                                            <td class="p-3 text-sm md:text-base">01-04-2024</td>
+                                            <td class="p-3 text-sm md:text-base flex gap-5">
+                                                <a href="#" class="text-blue-600 hover:underline">
+                                                Edit
+                                                </a>
+                                                <a href="#" class="text-red-600 hover:underline">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+
                                     </tbody>
                                 </table>
                             </div>
