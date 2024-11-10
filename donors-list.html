@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Donors List</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -37,7 +37,7 @@
 
     <header class="lg:hidden text-white sticky top-0 z-50 backdrop-blur-md">
         <div class="bg-[#B71C1C] pb-2">
-            <nav class="flex justify-between items-center lg:w-10/12 mx-auto py-2 px-5 md:px-10 lg:px-0 ">
+            <nav class="flex justify-between items-center lg:w-10/12 mx-auto pt-4 pb-2 px-5 md:px-10 lg:px-0 ">
                 <div class="mr-2">
                     <a href="../index.html" target="_blank">
                         <img src="image/logo.jpg" alt="site_logo"
@@ -51,7 +51,7 @@
                             class="text-black text-sm px-4 py-2 md:px-6 w-40 rounded-md md:w-auto" />
                     </div>
 
-                    <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-4">
                         <a href="#">
                             <img src="image/user.jpg" alt="admin_profile_pic" class="w-8 rounded-full">
                         </a>
@@ -92,22 +92,17 @@
                         <hr class="opacity-30">
                         <a href="profile.html" class="block py-2 px-4 rounded hover:bg-blue-700">Profile</a>
                         <hr class="opacity-30">
-                        <a href="donors-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donors list (table
-                            of donors)</a>
+                        <a href="donors-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donors list (table of donors)</a>
                         <hr class="opacity-30">
-                        <a href="add-new-donors.html" class="block py-2 px-4 rounded hover:bg-blue-700">Add new donor
-                            (Donor add form)</a>
+                        <a href="add-new-donors.html" class="block py-2 px-4 rounded hover:bg-blue-700">Add new donor (Donor add form)</a>
                         <hr class="opacity-30">
-                        <a href="approvals.html" class="block py-2 px-4 rounded hover:bg-blue-700">Approvals (Table of
-                            pending
+                        <a href="approvals.html" class="block py-2 px-4 rounded hover:bg-blue-700">Approvals (Table of pending
                             donors)</a>
                         <hr class="opacity-30">
-                        <a href="donation-list-date.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donation
-                            lists (table of donor
+                        <a href="donation-list-date.html" class="block py-2 px-4 rounded hover:bg-blue-700">Donation lists (table of donor
                             donate dates)</a>
                         <hr class="opacity-30">
-                        <a href="user-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">User List (table of
-                            account
+                        <a href="user-list.html" class="block py-2 px-4 rounded hover:bg-blue-700">User List (table of account
                             users)</a>
                         <hr class="opacity-30">
                     </nav>
@@ -149,8 +144,8 @@
                             <img src="image/flower.gif" alt="flower_logo" class="w-10 rounded-full">
                         </span>
                     </h1>
-                    <div class="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between px-4 py-8">
-                        <a href="donors-list.html">
+                    <!-- <div class="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between px-4 py-8">
+                        <a href="#">
                             <div
                                 class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-violet-50">
                                 <div>
@@ -163,7 +158,7 @@
                             </div>
                         </a>
 
-                        <a href="user-list.html">
+                        <a href="#">
                             <div
                                 class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-blue-50">
                                 <div>
@@ -176,7 +171,7 @@
                             </div>
                         </a>
 
-                        <a href="add-new-donors.html">
+                        <a href="#">
                             <div
                                 class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-yellow-50">
                                 <div>
@@ -189,11 +184,11 @@
                             </div>
                         </a>
 
-                        <a href="approvals.html">
+                        <a href="#">
                             <div
                                 class="bg-white rounded-lg p-4 flex justify-between items-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 hover:bg-orange-50">
                                 <div>
-                                    <h1 class="text-lg font-semibold">Approvals</h1>
+                                    <h1 class="text-lg font-semibold">Approval</h1>
                                     <p class="text-[#1E3A8A] text-3xl font-semibold mt-2">100+</p>
                                 </div>
                                 <div>
@@ -201,27 +196,20 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                     <!-- main section start -->
                     <main class="px-4 mt-6">
                         <div class="bg-white p-4 md:p-6 rounded-lg shadow-md">
-                            <h2 class="text-xl md:text-2xl font-bold mb-4">Donors List</h2>
+                            <h2 class="text-xl md:text-2xl font-bold mb-4">Total Donors List</h2>
                             <div class="overflow-x-auto">
                                 <table class="min-w-full border-collapse">
                                     <thead>
                                         <tr>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Name
-                                            </th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Blood
-                                                Group</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">
-                                                Location</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Phone
-                                            </th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Last
-                                                Donation</th>
-                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Actions
-                                            </th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Name</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Blood Group</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Location</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Phone</th>
+                                            <th class="border-b-2 p-3 text-left text-sm md:text-base lg:text-lg">Last Donation</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -231,9 +219,6 @@
                                             <td class="p-3 text-sm md:text-base">New York</td>
                                             <td class="p-3 text-sm md:text-base">01234567890</td>
                                             <td class="p-3 text-sm md:text-base">01-08-2024</td>
-                                            <td class="p-3 text-sm md:text-base"><button onclick="toggleEditForm()"
-                                                    class="text-blue-500 hover:underline">Edit</button>
-                                            </td>
                                         </tr>
                                         <tr class="border-b">
                                             <td class="p-3 text-sm md:text-base">Jane Smith</td>
@@ -241,74 +226,8 @@
                                             <td class="p-3 text-sm md:text-base">California</td>
                                             <td class="p-3 text-sm md:text-base">01789456120</td>
                                             <td class="p-3 text-sm md:text-base">01-09-2024</td>
-                                            <td class="p-3 text-sm md:text-base"><button onclick="toggleEditForm()"
-                                                    class="text-blue-500 hover:underline">Edit</button>
-                                            </td>
                                         </tr>
                                     </tbody>
-
-                                    <div id="editFormModal"
-                                        class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
-                                        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
-                                            <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Update
-                                                Profile</h3>
-                                            <form>
-                                                <!-- Profile Image Upload -->
-                                                <div class="mb-4 text-center">
-                                                    <label class="block text-gray-700 font-medium mb-2">Profile
-                                                        Image</label>
-                                                    <input type="file" id="imageUpload" class="block mx-auto"
-                                                        onchange="loadImagePreview(event)">
-                                                    <img id="imagePreview"
-                                                        class="w-24 h-24 rounded-full border-2 border-gray-300 mt-2 hidden"
-                                                        alt="Preview">
-                                                </div>
-                                                <!-- Name Input -->
-                                                <div class="mb-4">
-                                                    <label class="block text-gray-700">Name</label>
-                                                    <input type="text"
-                                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
-                                                        placeholder="Enter name">
-                                                </div>
-                                                <!-- Address Input -->
-                                                <div class="mb-4">
-                                                    <label class="block text-gray-700">Address</label>
-                                                    <input type="text"
-                                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
-                                                        placeholder="Enter address">
-                                                </div>
-                                                <!-- Blood Group Input -->
-                                                <div class="mb-4">
-                                                    <label class="block text-gray-700">Blood Group</label>
-                                                    <input type="text"
-                                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
-                                                        placeholder="Enter blood group">
-                                                </div>
-                                                <!-- Phone Input -->
-                                                <div class="mb-4">
-                                                    <label class="block text-gray-700">Phone</label>
-                                                    <input type="tel"
-                                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
-                                                        placeholder="Enter phone number">
-                                                </div>
-                                                <!-- Email Input -->
-                                                <div class="mb-4">
-                                                    <label class="block text-gray-700">Email</label>
-                                                    <input type="email"
-                                                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
-                                                        placeholder="Enter email">
-                                                </div>
-                                                <!-- Save and Cancel Buttons -->
-                                                <div class="flex justify-end">
-                                                    <button type="button" onclick="toggleEditForm()"
-                                                        class="bg-gray-500 text-white font-bold py-2 px-4 rounded-lg mr-2">Cancel</button>
-                                                    <button type="submit"
-                                                        class="bg-red-500 text-white font-bold py-2 px-4 rounded-lg">Save
-                                                        Changes</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
                                 </table>
                             </div>
                         </div>
@@ -319,19 +238,6 @@
         </section>
     </div>
     <!-- header large device section end -->
-    <!-- simple js -->
-    <script>
-        function toggleEditForm() {
-            const modal = document.getElementById("editFormModal");
-            modal.classList.toggle("hidden");
-        }
-
-        function loadImagePreview(event) {
-            const imagePreview = document.getElementById("imagePreview");
-            imagePreview.src = URL.createObjectURL(event.target.files[0]);
-            imagePreview.classList.remove("hidden");
-        }
-    </script>
 </body>
 
 </html>
